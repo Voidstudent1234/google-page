@@ -1,2 +1,2 @@
 # google-page
-this is my first gib repository
+this is my first git repository
