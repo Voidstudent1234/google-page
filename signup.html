@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+
+	}
+	#main{
+		height: 100%;
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.void{
+		position: absolute;
+		display: flex;
+		top: 6%;
+		font-size: 30px;
+		}
+	#signup{
+		width: 70%;
+		height: 70%;
+		border-bottom: 2px solid green;
+		border-top: 2px solid royalblue;
+		border-right: 2px solid yellow;
+		border-left: 2px solid red;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+
+		
+
+		
+	}
+	.btn{
+		background-color:#fff;
+		border-top: 2px solid royalblue;
+		border-right: 2px solid yellow;
+		border-bottom: 2px solid green;
+		border-left: 2px solid red;
+		position: absolute;
+		display: flex;
+		top: 90%;
+		color: red;
+		border-radius: 10px;
+		font-size: 15px;
+		padding: 5px;
+		box-shadow: 2px 0px 2px royalblue;
+	}
+	.btn:hover{
+		box-shadow: -2px 0px 2px royalblue;
+	}
+	#login{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		top: 40%;
+		left: 70%;
+		padding: 10px;
+		grid-gap: 20px;
+	}
+	.cercle{
+		width: 12vw;
+		height: 10vh;
+		
+		position: absolute;
+		display: flex;
+		left: 15%;
+		top: 6%;
+		
+	}
+	.modify1{
+		width: 20vw;
+		height: 10vh;
+		padding: 10px;
+		background-color: none;
+		position: absolute;
+		display: flex;
+		left: 0%;
+		top: 0%;
+		justify-content: space-between;
+		animation-name: circle;
+		animation-duration: 4s;
+		animation-direction: alternate;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		
+		
+	}
+	.dot{
+		width: 3vw;
+		height: 6vh;
+		box-shadow: 2px 0px 3px royalblue;
+		background-color: red;
+		
+		border-radius: 100%;
+		display: flex;
+		
+	}
+	@keyframes circle{
+		from{
+			left: 100%;
+			rotate:100%
+		}to{
+			left: 0%;
+			rotate:100%
+		}
+	}
+	.modify2{
+		width: 20vw;
+		height: 10vh;
+		padding: 10px;
+		background-color: none;
+		position: absolute;
+		display: flex;
+		right: 0%;
+		bottom: 0%;
+		justify-content: space-between;
+		animation-name: circles;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+		animation-direction: alternate;
+		animation-timing-function: linear;
+	}
+	@keyframes circles{
+		from{
+			right: 100%;
+			rotate:100%;
+		}to{
+			right: 0%;
+			rotate:100%
+		}
+	}
+
+	
+	
+</style>
+<body>
+	<div id="main">
+		<div id="signup">
+				<div class="void">
+					<h2 style="color: royalblue">G</h2>
+					<h2 style="color: red">o</h2>
+					<h2 style="color: yellow">o</h2>
+					<h2 style="color: royalblue">g</h2>
+					<h2 style="color: green">l</h2>
+					<h2 style="color: red">e</h2> 
+				</div>
+			
+				<form><label style="color: royalblue">Name:</label><br/>
+					<input type="text" name="name" required="required" ><br/>
+					<span style="color: red">Email:</span><br/>
+					<input type="email" name="email" required="required" ><br/>
+					<span style="color: green">Mobile:</span><br/>
+					<input type="text" name="Mobile" required="required"  ><br/>
+					<span style="color: royalblue">Date_Of_Birth:</span><br/>
+					<input type="date" name="D.O.B" required="required"><br/>
+					<span style="color: green">Password:</span><br/>
+					<input type="password" name="password" required="required"><br/>
+					<span style="color: red">Confirm_passwrod:</span><br/>
+					<input type="password" name="password" required="required" ><br/>
+					<button class="btn" onclick="openwin()"> Signup </button>
+				<div id="login">
+				
+						<h4 style="color: royalblue">You </h4>
+						<h4 style="color: red">are</h4>
+						<h4 style="color: yellow">already</h4>
+						<h4 style="color: green">registered</h4><br/>
+						<button class="btn" onclick="openwin()"> Login </button>
+					
+				</div>
+				</form>
+			
+		</div>
+		<div class="modify1">
+			<div class="dot" style="background-color: royalblue"></div>
+			<div class="dot" style="background-color: red"></div>
+			<div class="dot" style="background-color: yellow"></div>
+			<div class="dot" style="background-color: green"></div>
+		</div>
+		<div class="modify2">
+			<div class="dot" style="background-color: green"></div>
+			<div class="dot" style="background-color: yellow"></div>
+			<div class="dot" style="background-color: red"></div>
+			<div class="dot" style="background-color: royalblue"></div>
+		</div>
+		
+	</div>
+</body>
+<script>
+	var win;
+	function openwin(){
+		win=window.open("login.html")
+	}
+</script>
+</html>
