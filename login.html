@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+
+	}
+	#main{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	#login{
+		width: 80%;
+		height: 80%;
+		
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+
+	}
+	#page1{
+		width: 60%;
+		height: 80%;
+		
+		position: absolute;
+		border-bottom: 2px solid green;
+		border-top: 2px solid royalblue;
+		border-left:2px solid red;
+		border-right: 2px solid yellow;
+		border-radius: 10px;
+	}
+	#round1{
+		width: 10vw;
+		height: 20vh;
+		position: absolute;
+		border-radius: 100%;
+		display: flex;
+		top: 0%;
+		left: 0%;
+	}
+	#round2{
+		width: 10vw;
+		height: 20vh;
+		position: absolute;
+		border-radius: 100%;
+		display: flex;
+		top: 0%;
+		right: 0%;
+	}
+	#round3{
+		width: 10vw;
+		height: 20vh;
+		position: absolute;
+		border-radius: 100%;
+		display: flex;
+		bottom: 0%;
+		right: 0%;
+	}
+	#round4{
+		width: 10vw;
+		height: 20vh;
+		position: absolute;
+		border-radius: 100%;
+		display: flex;
+		bottom: 0%;
+		left: 0%;
+	}
+	.void{
+		position: absolute;
+		display: flex;
+		top: 0%;
+		font-size: 30px;
+		}
+		form{
+			width: 100%;
+			height: 100%;
+			color: red;
+			font-size: 25px;
+			position: absolute;
+			padding: 100px;
+
+
+		}
+		.insert{
+			width: 80%;
+			height: 15%;
+			background-color: #fff;
+			font-size: 20px;
+			color: royalblue;
+			outline: none;
+			border-bottom: 2px solid green;
+			border-top: 2px solid royalblue;
+			border-left:2px solid red;
+			border-right: 2px solid yellow;
+
+		}
+		#btn{
+		background-color:#fff;
+		border-top: 2px solid royalblue;
+		border-right: 2px solid yellow;
+		border-bottom: 2px solid green;
+		border-left: 2px solid red;
+		position: absolute;
+		display: flex;
+		top: 80%;
+		color: red;
+		border-radius: 10px;
+		font-size: 15px;
+		padding: 5px;
+		box-shadow: 2px 0px 2px royalblue;
+	}
+	#btn:hover{
+		box-shadow: -2px 0px 2px royalblue;
+	}
+	#signup{
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		top: 100%;
+		left: 20%;
+		padding: 10px;
+		grid-gap: 20px;
+	}
+</style>
+<body>
+	<div id="main">
+		<div style="background-color: royalblue" id="round1"></div>
+		<div style="background-color: green" id="round2"></div>
+		<div style="background-color: red" id="round3"></div>
+		<div style="background-color: yellow" id="round4"></div>
+		<div id="login">
+			<div class="void">
+				<h2 style="color: royalblue">G</h2>
+				<h2 style="color: red">o</h2>
+				<h2 style="color: yellow">o</h2>
+				<h2 style="color: royalblue">g</h2>
+				<h2 style="color: green">l</h2>
+				<h2 style="color: red">e</h2> 
+			</div>
+			
+			<div id="page1">
+			<form>
+				<label >Email/Username</label><br/>
+				<input type="text" name="name" required="required" class="insert"><br/>
+				<label>Password</label><br/>
+				<input type="password" name="password" required="required" class="insert"><br/>
+				<h4 style="color: green">forgot password</h4><br/>
+				<button id="btn" onclick="openwin()">Login</button>
+				
+
+			</form>	
+			<div id="signup">
+				
+					<h4 style="color: royalblue"> Create</h4>
+					<h4 style="color: red">Account</h4>
+					<h4 style="color: yellow">Please</h4>
+					<h4 style="color: green">registered</h4><br/>
+					<button id="btn" style="top: 100%" onclick="opensignup()"> Signup </button>
+					
+			</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	
+	function openwin(){
+		let win;
+		win=window.open("Home.html");
+	}
+	function opensignup(){
+		let win;
+		win=window.open("signup.html")
+	}
+
+</script>
+</html>
