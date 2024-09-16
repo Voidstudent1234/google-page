@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ram</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html,body{
+		height: 100%;
+		width: 100%;
+	}
+	.void{
+		position: absolute;
+		display: flex;
+		top: 6%;
+		font-size: 30px;
+		}
+	#main{
+		height: 100%;
+		width: 100%;
+		position: relative;
+
+
+
+	
+	}
+	.void{
+		position: absolute;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 10px;
+		left: 62%;
+		top: 40%;
+	}
+	h2{
+						
+		font-size: 100px;
+		color: royalblue;
+		text-shadow: 3px 4px #dadada;
+			
+	}
+	
+	
+	nav{
+		width: 100%;
+		height: 10%;
+		background-color: white;
+		display: flex;
+		padding-left: auto;
+		justify-content: end;
+		text-align: right;
+		padding-right: 10%;
+		align-items: center;
+		grid-gap: 5%;
+		box-shadow: 3px 2px 3px royalblue;
+		color: red;
+		
+		
+		
+
+
+	}
+	nav.h4{
+		font-size: 20vw;
+		color: solid black;
+
+	}
+	
+	.slid{
+		width: 25vw;
+		height: 100vh;
+		background-color: white;
+		display: flex;
+		left: 20px;
+		position: absolute;
+		transform: skewX(23deg);
+		box-shadow: 3px 0px 3px royalblue;
+		border-radius: 100px;
+
+		
+
+	}
+
+	
+	.btn1{
+		width: 10vw;
+		height: 5vh;
+		background-color: white;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 80%;
+		top: 80%;
+		border-radius: 10px;
+		font-size: 100%;
+		font-weight: 80px;
+		color: green;
+		box-shadow: 1px 1px 2px red;
+		border-left: 2px solid yellow;
+		border-bottom: 2px  solid red;
+		border-top: 2px solid royalblue;
+		border-right: 2px solid green; 
+		transition: 0.5s;
+
+
+
+
+
+
+	}
+	.btn2{
+		width: 10vw;
+		height: 5vh;
+		background-color: white;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 60%;
+		top: 80%;
+		border-radius: 10px;
+		font-size: 100%;
+		font-weight: 80px;
+		color: green;
+		box-shadow: 1px 1px 2px red;
+		border-top: 2px solid royalblue;
+		border-left: 2px solid yellow;
+		border-bottom: 2px  solid red;
+		border-right: 2px solid green; 
+		transition: 0.5s;
+	}
+	.btn1:hover{
+		box-shadow: -2px -2px 3px royalblue;
+		
+	
+	}
+	.btn2:hover{
+		box-shadow: -2px -2px 3px royalblue;
+		
+	}
+	.modify1{
+		width: 17vw;
+		height: 9vh;
+		padding: 10px;
+		background-color: none;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		justify-content: space-between;
+		top: 10%;
+		left: 18%;
+	}
+	.modify2{
+		width: 17vw;
+		height: 9vh;
+		padding: 10px;
+		background-color: none;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		justify-content: space-between;
+		top: 95%;
+		left: 80%;
+	}
+	.dot{
+		width: 3vw;
+		height: 6vh;
+		box-shadow: 2px 0px 3px royalblue;
+		background-color: red;
+		
+		border-radius: 100%;
+		display: flex;
+
+	}
+
+	
+	
+</style>
+<body>
+	<div id="main">
+		<nav>
+			<h4 style="color: royalblue">HOME</h4>
+			<h4 style="color: red">EDUCATION</h4>
+			<h4 style="color: yellow">SKILL</h4>
+			<h4 style="color: green">ABOUT</h4>
+		</nav>
+		<div class="modify1">
+			<div class="dot" style="background-color: royalblue"></div>
+			<div class="dot" style="background-color: red"></div>
+			<div class="dot" style="background-color: yellow"></div>
+			<div class="dot" style="background-color: green"></div>
+		</div>
+		
+		<div class="slid">
+			
+		</div>
+			
+		
+		
+		 <div class="void">
+			<h2 style="color: royalblue">G</h2>
+			<h2 style="color: red">o</h2>
+			<h2 style="color: yellow">o</h2>
+			<h2 style="color: royalblue">g</h2>
+			<h2 style="color: green">l</h2>
+			<h2 style="color: red">e</h2> 
+		</div>
+		<div class="modify2">
+			<div class="dot" style="background-color: royalblue"></div>
+			<div class="dot" style="background-color: red"></div>
+			<div class="dot" style="background-color: yellow"></div>
+			<div class="dot" style="background-color: green"></div>
+		</div>
+		<button class="btn1" onclick="opensignup()">Signup</button>
+		<button class="btn2" onclick="openwin()">Login</button>
+	</div>
+
+</body>
+<script type="text/javascript">
+	
+	function opensignup(){
+		let win;
+		win=window.open("signup.html")
+	}
+	
+	function openwin(){
+		let win
+		win=window.open("login.html")
+	}
+</script>
+</html>
